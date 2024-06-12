@@ -1,0 +1,14 @@
+Sub ConvertFormulasToValues()
+    Dim ws As Worksheet
+    Dim rng As Range
+    
+    ' 设置工作表 (假设是当前活动工作表)
+    Set ws = ThisWorkbook.ActiveSheet
+    
+    ' 设置目标范围 (假设是列B，从第2行到第10行)
+    Set rng = ws.Range("E1:F10")
+    
+    ' 将公式结果转换为值
+    rng.Value = rng.Value
+    
+End Sub
